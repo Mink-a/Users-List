@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import { Key } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 interface Props {
   users: [];
@@ -18,6 +19,10 @@ export const getStaticProps = async () => {
 
 const AllUsers: NextPage<Props> = ({ users }: Props) => {
   return (
+    <>
+    <Head>
+      <title>All Users List</title>
+    </Head>
     <div>
       <h1 className="mb-4 text-2xl font-bold">All Users</h1>
       <div>
@@ -32,6 +37,7 @@ const AllUsers: NextPage<Props> = ({ users }: Props) => {
         })}
       </div>
     </div>
+    </>
   );
 };
 

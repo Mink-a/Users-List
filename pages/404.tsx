@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 interface Props {}
 
@@ -15,6 +16,10 @@ const NotFound: NextPage<Props> = ({}) => {
   }, []);
 
   return (
+    <>
+    <Head>
+      <title>Not Found</title>
+    </Head>
     <section className="flex items-center h-full p-16">
       <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
         <div className="max-w-md text-center">
@@ -38,6 +43,7 @@ const NotFound: NextPage<Props> = ({}) => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
