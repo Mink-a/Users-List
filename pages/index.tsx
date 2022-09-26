@@ -22,10 +22,10 @@ const Home: NextPage = () => {
           molestiae pariatur laboriosam nihil iste excepturi.
         </p>
         <Link href={"/users"}>
-          <a className="bg-indigo-200 inline-block mt-4 py-1 px-3">
-            See all users
-          </a>
-        </Link>
+        <a className="mt-4 inline-block text-white hover:rounded bg-indigo-600 py-1 px-3">
+          See all users
+        </a>
+      </Link>
       </div>
     </>
   );

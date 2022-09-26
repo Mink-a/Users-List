@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className="dark:bg-slate-900 dark:text-slate-100">
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=optional"

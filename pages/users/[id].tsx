@@ -35,8 +35,8 @@ const DynamicePage: NextPage<Props> = ({ user }) => {
     <Head>
       <title>User Details</title>
     </Head>
-      <div className="text-center font-bold text-xl text-indigo-600 bg-slate-300 py-1">{user.id}</div>
-      <div className="text-center bg-slate-50 h-[60vh] flex justify-center items-center font-fancy text-3xl">{user.name}</div>
+      <div className="text-center font-bold text-xl text-indigo-600 bg-slate-300 py-1 dark:bg-slate-700 dark:text-indigo-100">{user.id}</div>
+      <div className="text-center bg-slate-50 dark:bg-slate-800 dark:text-slate-100 h-[60vh] flex justify-center items-center font-fancy text-3xl">{user.name}</div>
       <Link href={"/users"}>
         <a className="mt-4 inline-block text-white hover:rounded bg-indigo-600 py-1 px-3">
           See all users
